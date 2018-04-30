@@ -45,7 +45,7 @@ pprint(responses)
 
 
 job_id,prevhash,coinb1,coinb2,merkle_branch,version,nbits,ntime,clean_jobs \
-    = responses[1]['params']
+    = responses[2]['params']
 
 #target http://stackoverflow.com/a/22161019
 target = (nbits[2:]+'00'*(int(nbits[:2],16))).zfill(64)
